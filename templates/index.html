@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈 페이지</title>
+</head>
+<body>
+    <h1>환자 및 약물 관리 시스템</h1>
+
+    <!-- 환자 정보 입력을 위한 비밀번호 확인 후 리다이렉션 -->
+    <a href="{{ url_for('password_patient_page') }}">환자 정보 입력</a>
+    <br><br>
+    <form action="/patient_info" method="GET">
+        <label for="patient_id">환자 ID 조회:</label>
+        <input type="text" id="patient_id" name="patient_id" required>
+        <button type="submit">조회</button>
+    </form>
+    <br><br>
+
+    <!-- 약물 정보 입력을 위한 비밀번호 확인 후 리다이렉션 -->
+    <a href="{{ url_for('password_drug_page') }}">약물 정보 입력</a>
+    <br><br>
+    <form action="/drug_info" method="GET">
+        <label for="drug_id">약물 ID 조회:</label>
+        <input type="text" id="drug_id" name="drug_id" required>
+        <button type="submit">조회</button>
+    </form>
+</body>
+</html>

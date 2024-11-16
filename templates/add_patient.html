@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환자 정보 입력</title>
+</head>
+<body>
+    <h1>환자 정보 입력</h1>
+    <form action="/add_patient" method="POST">
+        <label for="patient_id">환자 ID:</label>
+        <input type="text" id="patient_id" name="patient_id" required>
+        <br><br>
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="disease">병명:</label>
+        <input type="text" id="disease" name="disease" required>
+        <br><br>
+        <label for="medication">처방 약물:</label>
+        <input type="text" id="medication" name="medication" required>
+        <br><br>
+        <label for="last_disease">이전 진료 내용:</label>  <!-- 수정 부분 -->
+        <input type="text" id="last_disease" name="last_disease" required>
+        <br><br>
+        <button type="submit">저장</button>
+    </form>
+</body>
+</html>

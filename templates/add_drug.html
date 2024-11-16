@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>약물 정보 입력</title>
+</head>
+<body>
+    <h1>약물 정보 입력</h1>
+    <form action="/add_drug" method="POST">
+        <label for="drug_id">약물 ID:</label>
+        <input type="text" id="drug_id" name="drug_id" required>
+        <br><br>
+        <label for="drug_name">약물 이름:</label>
+        <input type="text" id="drug_name" name="drug_name" required>
+        <br><br>
+        <label for="drug_function">사용 용도 및 기능:</label>
+        <textarea id="drug_function" name="drug_function" required></textarea>
+        <br><br>
+        <label for="drug_capacity">적정 용량 및 부작용:</label>
+        <textarea id="drug_capacity" name="drug_capacity" required></textarea>
+        <br><br>
+        <label for="drug_badfood">함께 섭취하면 안 되는 음식:</label>
+        <textarea id="drug_badfood" name="drug_badfood" required></textarea>
+        <br><br>
+        <label for="drug_goodfood">추천 음식:</label>
+        <textarea id="drug_goodfood" name="drug_goodfood" required></textarea>
+        <br><br>
+        <label for="drug_exercise">추천 운동:</label>
+        <textarea id="drug_exercise" name="drug_exercise" required></textarea>
+        <br><br>
+        <button type="submit">저장</button>
+    </form>
+</body>
+</html>
